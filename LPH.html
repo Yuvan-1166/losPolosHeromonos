@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<title>LOS POLLOS HERMANOS</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/a/ae/Los_Pollos_Hermanos_logo.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ff7d00;
+            color: #d30000;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffd700;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #d30000;
+            border-radius: 15px;
+            margin-bottom: 5px;
+            display: ;
+        }
+
+        header img {
+            width: 250px;
+            border:solid black;
+            border-width:5px;
+            border-radius:200px;
+            padding:10px;
+            background-color: #d30000;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #d30000;
+            font-family: 'Pacifico', cursive;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            color: #000;
+            font-size: 18px;
+            padding-left:250px;
+        }
+
+        nav {
+            background-color: #d30000;
+            padding: 10px;
+            text-align: center;
+            border:none;
+            border-radius:10px;
+            margin-bottom:5px;
+        }
+
+        nav a {
+            color: #ffd700;
+            padding: 15px;
+            margin: 10px;
+            text-decoration:none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #ffd700;
+            border: 2px solid #d30000;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #d30000;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        li, #captcha{
+            margin: 10px;
+            padding: 10px;
+            background:#d4c5c3;
+            border: 5px solid #d30000;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            font-family:verdana;
+            font-style: italic;
+            font-weight: bold;
+        }
+        li:hover {
+            transform: scale(1.05);
+        }
+        .donthover:hover{
+            transform: scale(1);
+        }
+
+        li img {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #000;
+            border-radius: 25px;
+        }
+
+        footer {
+            background-color: #d30000;
+            padding: 5px;
+            color:yellow;
+            text-align:center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 3%;
+            border:none;
+            border-radius:10px;
+            
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d30000;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border:solid black;
+            border-radius:7px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 15px;
+            border: solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d30000;
+        }
+        .up {
+            border-radius:100%;
+            }
+        div{
+            text-align:right;
+           }
+    </style>
+    <script type="text/Javascript">
+        function messagesent(){
+            if(!alert("Your message is successfully sent!")){
+                document.location="file:///C:/Users/Yuvan%20shankar/Programs/App%20Development%20Practices/breaking%20bad%20tq.html";
+            }
+        }
+        function Captcha(){
+            var heisen="heisenberg";
+            var Value=document.getElementById("cap").value;
+            Value=Value.toLowerCase();
+            if(Value==heisen){
+                document.getElementById("contact").innerHTML='<h2>Contact Us</h2><form><label for="name">Name:</label><input type="text" id="name" name="name" required><label for="email">Email:</label><input type="email" id="email" name="email" required><label for="message">Message:</label><textarea id="message" name="message" rows="4" required></textarea><button type="submit" onclick="messagesent()">Send Message</button></form>';
+                document.getElementById("navigate").innerHTML='<a href="#menu">Menu</a><a href="#location">Location</a><a href="#contact">Contact</a><a href="#about">About Us</a>';
+             document.get}
+        }
+        function order(){
+            document.getElementById("body").innerHTML=`<section id="menu"><h2>Menu</h2><p style="text-align:center; font-weight:bold;">Select the item and quantity</p><ul><li class="donthover"><img src="https://media.istockphoto.com/id/1457502498/photo/fried-chicken-tenders-or-strips-with-sauces-and-fries.jpg?s=612x612&w=0&k=20&c=_F-js_ptw3437A7r1XfRfjN4WXwwgVuXTN8NBliOMhM=" alt="Chicken Tenders"><p>Chicken Tenders</p></li><li class=donthover><img src="https://tahinis.com/cdn/shop/files/Shawn_special-style-3_cropped_1.png?v=1619810816&width=750" alt="Pollos Bowl"><p>Pollos Bowl</p></li><li class="donthover"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/95/dc/92/caption.jpg" alt="Gus' Special"><p>Gus' Special</p></li><li class="donthover"><img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Thai-Chicken-Coleslaw_EXPS_SDJJ17_201224_B02_16_4b.jpg?fit=700%2C1024" alt="Saul's Slaw"><p>Saul's Slaw</p></li><li class="donthover"><img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2023/04/crispy-chicken-burger-1-500x500.jpg" alt="Heisenburger"><p>Heisenburger</p><li class="donthover"><img src="https://farmerowned.com/images/featuredRecipesImages/featuredRecipes1457236675.jpg" alt="Honey Mustard Chicken"><p>W.W. Honey Mustard Chicken</p></li><li class="donthover"><img src="https://lh3.googleusercontent.com/4BTIA6SXYUYVCuzZR7iDQM21_aRM_fiom6gZHjxFx9pfKBBaYzFFV6m2KyayspPWLeOBvxBRNXIe6KiWxaHl6Hpkz6w2K90K5wm7=w1875-h1875-c-rj-v1-e365" alt="Nacho's Cheese Loaded"><p>Nacho's Cheese Loaded</p></li><li class="donthover"><img src="https://www.sugarhero.com/wp-content/uploads/2012/07/crystal-meth-rock-candy_thumb.jpg" alt="Methamphetamine"><p>Crystal Candy</p><p><font color="black">Currently Unavailable!</font></p></li><li class="donthover"><img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_27/1586836/hotdogs-te-square-200702.jpg" alt="Schraeder's Hot dog"><p>Schraeder's Hot dog</p></li><li class="donthover"><img src="https://pinchandswirl.com/wp-content/uploads/2022/11/Lamb-Tacos__sq.jpg" alt="Tuko Taco"><p>Tuko Taco</p></li><button onclick="orderPlaced()">ORDER NOW</button></ul></section>`
+        }
+        function orderPlaced() {
+            document.getElementById("body").innerHTML=`<section id="menu"><h2>Menu</h2><p style="text-align:center; font-weight:bold;">Select the item and quantity</p><ul><li class="donthover"><img src="https://media.istockphoto.com/id/1457502498/photo/fried-chicken-tenders-or-strips-with-sauces-and-fries.jpg?s=612x612&w=0&k=20&c=_F-js_ptw3437A7r1XfRfjN4WXwwgVuXTN8NBliOMhM=" alt="Chicken Tenders"><p>Chicken Tenders</p></li><li class=donthover><img src="https://tahinis.com/cdn/shop/files/Shawn_special-style-3_cropped_1.png?v=1619810816&width=750" alt="Pollos Bowl"><p>Pollos Bowl</p></li><li class="donthover"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/95/dc/92/caption.jpg" alt="Gus' Special"><p>Gus' Special</p></li><li class="donthover"><img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Thai-Chicken-Coleslaw_EXPS_SDJJ17_201224_B02_16_4b.jpg?fit=700%2C1024" alt="Saul's Slaw"><p>Saul's Slaw</p></li><li class="donthover"><img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2023/04/crispy-chicken-burger-1-500x500.jpg" alt="Heisenburger"><p>Heisenburger</p><li class="donthover"><img src="https://farmerowned.com/images/featuredRecipesImages/featuredRecipes1457236675.jpg" alt="Honey Mustard Chicken"><p>W.W. Honey Mustard Chicken</p></li><li class="donthover"><img src="https://lh3.googleusercontent.com/4BTIA6SXYUYVCuzZR7iDQM21_aRM_fiom6gZHjxFx9pfKBBaYzFFV6m2KyayspPWLeOBvxBRNXIe6KiWxaHl6Hpkz6w2K90K5wm7=w1875-h1875-c-rj-v1-e365" alt="Nacho's Cheese Loaded"><p>Nacho's Cheese Loaded</p></li><li class="donthover"><img src="https://www.sugarhero.com/wp-content/uploads/2012/07/crystal-meth-rock-candy_thumb.jpg" alt="Methamphetamine"><p>Crystal Candy</p><p><font color="black">Currently Unavailable!</font></p></li><li class="donthover"><img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_27/1586836/hotdogs-te-square-200702.jpg" alt="Schraeder's Hot dog"><p>Schraeder's Hot dog</p></li><li class="donthover"><img src="https://pinchandswirl.com/wp-content/uploads/2022/11/Lamb-Tacos__sq.jpg" alt="Tuko Taco"><p>Tuko Taco</p></li><button onclick="orderPlaced()">ORDER NOW</button></ul></section><section id="order"></section>`
+        }
+    </script>
+</head>
+<body id="body">
+
+    <header id = "up">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Los_Pollos_Hermanos_logo.png" alt="Los Pollos Hermanos Logo">
+        <h1>Los Pollos Hermanos</h1>
+        <p><b>Where flavor meets family</b></p>
+    </header>
+
+    <nav id="navigate">
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Captcha</a>
+        <a href="#about">About Us</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <img src="https://media.istockphoto.com/id/1457502498/photo/fried-chicken-tenders-or-strips-with-sauces-and-fries.jpg?s=612x612&w=0&k=20&c=_F-js_ptw3437A7r1XfRfjN4WXwwgVuXTN8NBliOMhM=" alt="Chicken Tenders">
+                <p>Chicken Tenders</p>
+            </li>
+            <li>
+                <img src="https://tahinis.com/cdn/shop/files/Shawn_special-style-3_cropped_1.png?v=1619810816&width=750" alt="Pollos Bowl">
+                <p>Pollos Bowl</p>
+            </li>
+            <li>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/95/dc/92/caption.jpg" alt="Gus' Special">
+                <p>Gus' Special</p>
+            </li>
+            <li>
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Thai-Chicken-Coleslaw_EXPS_SDJJ17_201224_B02_16_4b.jpg?fit=700%2C1024" alt="Saul's Slaw">
+                <p>Saul's Slaw</p>
+            </li>
+            <li>
+                <img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2023/04/crispy-chicken-burger-1-500x500.jpg" alt="Heisenburger">
+                <p>Heisenburger</p>
+            <li>
+                <img src="https://farmerowned.com/images/featuredRecipesImages/featuredRecipes1457236675.jpg" alt="Honey Mustard Chicken">
+                <p>W.W. Honey Mustard Chicken</p>
+            </li>
+            <li>
+                <img src="https://lh3.googleusercontent.com/4BTIA6SXYUYVCuzZR7iDQM21_aRM_fiom6gZHjxFx9pfKBBaYzFFV6m2KyayspPWLeOBvxBRNXIe6KiWxaHl6Hpkz6w2K90K5wm7=w1875-h1875-c-rj-v1-e365" alt="Nacho's Cheese Loaded">
+                <p>Nacho's Cheese Loaded</p>
+            </li>
+            <li>
+                <img src="https://www.sugarhero.com/wp-content/uploads/2012/07/crystal-meth-rock-candy_thumb.jpg" alt="Methamphetamine">
+                <p>Crystal Candy</p><p><font color="black">Currently Unavailable!</font></p>
+            </li>
+            <li>
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_27/1586836/hotdogs-te-square-200702.jpg" alt="Schraeder's Hot dog">
+                <p>Schraeder's Hot dog</p>
+            </li>
+            <li>
+                <img src="https://pinchandswirl.com/wp-content/uploads/2022/11/Lamb-Tacos__sq.jpg" alt="Tuko Taco">
+                <p>Tuko Taco</p>
+            </li>
+            <button onclick="order()">ORDER NOW</button>
+        </ul>
+    </section>
+
+    <section id="location">
+        <h2>Location</h2>
+        <p>Visit us at our iconic locations in Albuquerque or any city near you!</p>
+    </section>
+
+    <section id="contact">
+        <h2>CAPTCHA VERIFICATION</h2><br>
+        <form>
+            <input id="cap" type="text" placeholder="Enter Captcha">
+            <center><img id="captcha" src="data:image/jpeg;base64,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" width=250px;><br>
+            <button onclick="Captcha()">Verify</button></center>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Los Pollos Hermanos was founded by Chilean nationals and business partners Gus Fring and Max Arciniega in Mexico. Eventually, Gus emigrated to the United States and opened branches primarily in New Mexico. Los Pollos Hermanos was a fast-food restaurant chain that specialized in fried chicken operating across the southwestern United States. The name is ungrammatical Spanish for "The Chicken Brothers." the restaurant chain had fourteen locations throughout the southwest and was Gustavo Fring's major business concern. Los Pollos Hermanos was a subsidiary of Madrigal Electromotive, a German conglomerate with an ownership stake in the company.</p>
+        <div><button class="button up"><a href="#up"><img src="https://img.icons8.com/?size=50&id=100000&format=png" alt="up";></a></button></div>
+    </section><br>
+    <footer>
+       &copy;2023 Los Pollos Hermanos
+    </footer>
+
+</body>
+</html>
